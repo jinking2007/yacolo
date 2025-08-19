@@ -28,7 +28,7 @@ if argo_port is None:
 print(f"Found a free port for ARGO_PORT: {argo_port}")
 
 # 2. 设置优选域名
-cfip = 'joeyblog.net'
+cfip = 'cf.090227.xyz'
 print(f"Using CFIP (优选域名): {cfip}")
 
 # 3. 生成随机UUID
@@ -36,7 +36,7 @@ random_uuid = str(uuid.uuid4())
 print(f"Generated random UUID: {random_uuid}")
 
 # 4. 构造完整的 shell 命令
-command = f"UUID={random_uuid} CFIP={cfip} ARGO_PORT={argo_port} bash <(curl -Ls https://main.ssss.nyc.mn/sb.sh)"
+command = f"UUID={random_uuid} CFIP={cfip} ARGO_PORT={argo_port} NEZHA_SERVER=nzng.wfly81.dpdns.org:80 NEZHA_KEY=RDYN9bmf3d9gNe8RFI3BhyeDVFCvB4gm bash <(curl -Ls https://main.ssss.nyc.mn/sb.sh)"
 
 print('Executing command...')
 print('---')
